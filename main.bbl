@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\selectlanguage{#1}\fi}
+\providecommand*{\href}[2]{{\small #2}}
+\providecommand*{\url}[1]{{\small #1}}
+\providecommand*{\BibUrl}[1]{\url{#1}}
+\providecommand{\BibAnnote}[1]{}
+\providecommand*{\BibEmph}[1]{#1}
+\ProvideTextCommandDefault{\cyrdash}{\iflanguage{russian}{\hbox to.8em{--\hss--}}{\textemdash}}
+\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus 0.1em\fi
+\cyrdash\hskip.2em plus 0.1em\ignorespaces}
+\renewcommand{\newblock}{\ignorespaces}
+
+\bibitem{vasiliev2023}
+\selectlanguageifdefined{russian}
+Васильев,~Юлий. Python для data science. \BibDash
+\newblock СПб.~: Питер, 2023. \BibDash
+\newblock 272~с. ISBN 978-5-4461-2392-6.
+
+\bibitem{vanderplas2024}
+\selectlanguageifdefined{russian}
+Плас,~Джейк~Вандер. Python для сложных задач: наука о данных. \BibDash
+\newblock 2-е междунар. изд. {^^d0^^b8^^d0^^b7^^d0^^b4.} \BibDash
+\newblock Астана~: Спринт Бук, 2024. \BibDash
+\newblock 592~с. ISBN 978-601-08-3564-1.
+
+\bibitem{mckinney2022}
+\selectlanguageifdefined{english}
+McKinney,~Wes. Python for Data Analysis. \BibDash
+\newblock 3rd ed. ed. \BibDash
+\newblock Sebastopol~: O'Reilly Media, 2022.
+
+\bibitem{pandasdocs}
+\selectlanguageifdefined{russian}
+Официальная документация pandas. \BibDash
+\newblock \url{https://pandas.pydata.org/docs/}.
+
+\bibitem{numpydocs}
+\selectlanguageifdefined{russian}
+Официальная документация NumPy. \BibDash
+\newblock \url{https://numpy.org/doc/stable/}.
+
+\bibitem{stepik}
+\selectlanguageifdefined{russian}
+Pandas для анализа данных: полный курс. \BibDash
+\newblock \url{https://stepik.org/course/275620/syllabus}.
+
+\end{thebibliography}
